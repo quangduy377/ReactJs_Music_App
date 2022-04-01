@@ -1,0 +1,18 @@
+.main-container {
+    height: 100%;
+    /* border: solid black 2px; */
+    margin: 5rem;
+}
+
+
+.main-container__button {
+    background: green;
+    height: 5rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 22%;
+    left: 40%;
+    box-shadow: 5px 5px 10px 3px black;
+}
