@@ -1,13 +1,16 @@
 import React from "react";
 import HomeClasses from './home.module.css'
 import SharedClasses from '../../shared/shared.module.css'
-import UnifyImg from '../../images/unify.png'
+import backgroundImg from '../../images/background.webp'
 import Header from "../header/header";
 const Home = (props) => {
   return (
     <React.Fragment>
+      <div>
+        <img src={backgroundImg} className={HomeClasses["img_background"]}/>
+      </div>
       <Header/>
-      <main>
+      <main style={{paddingTop:'13rem'}}>
         <div>
           <div className={SharedClasses["main-container__item"]}>
             <p className={SharedClasses["main-container__title"]}>Sign in to Unify</p>

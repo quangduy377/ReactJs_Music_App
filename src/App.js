@@ -63,7 +63,7 @@ const pageReducer = (state, action) =>{
   }
   return newPageState
 }
-function App() {  
+function App() {
   const [pageState, dispatchPage] = useReducer(pageReducer,initialPageState)
   const openHomePage = () =>{
     dispatchPage({type: OPEN_HOME_PAGE})

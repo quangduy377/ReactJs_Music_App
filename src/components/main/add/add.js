@@ -1,10 +1,14 @@
 import React from "react";
 import unifyImg from "../../../images/unify.png";
 import trashImg from "../../../images/trash.png";
+import backgroundImg from '../../../images/background_2.jpg'
 import AddClasses from './add.module.css'
 const Add = (props) => {
   return (
     <React.Fragment>
+      <div>
+        <img src={backgroundImg} className={AddClasses["img_background"]}/>
+      </div>
       <header>
         <div className={AddClasses["header"]}>
           <a href="../../welcome/welcome.html" className={AddClasses["header-link"]}>

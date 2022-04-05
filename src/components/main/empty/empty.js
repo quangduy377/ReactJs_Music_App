@@ -2,9 +2,13 @@ import React from "react";
 import addImg from "../../../images/add.png";
 import unifyImg from "../../../images/unify.png"
 import EmptyClasses from './empty.module.css'
+import backgroundImg from '../../../images/background_2.jpg'
 const Empty = (props) => {
   return (
     <React.Fragment>
+      <div>
+        <img src={backgroundImg} className={EmptyClasses["img_background"]}/>
+      </div>
       <header>
         <div className={EmptyClasses["header"]}>
           <a href="welcome.html" className={EmptyClasses["header-link"]}>

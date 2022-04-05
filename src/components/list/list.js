@@ -1,5 +1,5 @@
 import React from "react"
-import background2Img from '../../images/background_2.jpg'
+import backgroundImg from '../../images/background_2.jpg'
 import unifyImg from '../../images/unify.png'
 import searchImg from '../../images/search.png'
 import singerImg from '../../images/singers/1.jpg'
@@ -7,7 +7,9 @@ import ListClasses from './list.module.css'
 
 const List = props =>{
     return(<React.Fragment>
-        <img className={ListClasses["main-img"]} src={background2Img}/>
+    <div>
+      <img className={ListClasses["img_background"]} src={backgroundImg}/>
+    </div>
     <header>
       <div className={ListClasses["header"]}>
         <a href="../../welcome/welcome.html" className={ListClasses["header-link"]}>
@@ -32,7 +34,7 @@ const List = props =>{
           </select>
         </div>
 
-        <div className={ListClasses["main-filter__section main-search"]}>
+        <div className={`${ListClasses["main-filter__section"]} ${ListClasses["main-search"]}`}>
           <input className={ListClasses["main-filter__input"]} type="text" placeholder="search singer, song, etc."/>
           <button className={ListClasses["main-filter__button"]}>
             <img src={searchImg}/>

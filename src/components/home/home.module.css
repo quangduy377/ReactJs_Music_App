@@ -1,6 +1,14 @@
+.img_background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 .main-container__form{
     color: white;
-    /* border: solid white 2px; */
 }
 
 .main-container__singin {
@@ -13,8 +21,6 @@
 .main-container__field {
     display: block;
     height: 5rem;
-    /* border: solid white 1px; */
-    position: relative;
 }
 
 .main-container__field div {
@@ -37,10 +43,9 @@
 .main-container__field label{
     display: block;
     font-size: 1.2rem;
+    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-    position: relative;
-    left: 3%;
 }
 
 .main-container__field a{
@@ -62,9 +67,7 @@
 .main-container__signup {
     font-size: 1.2rem;
     text-align: center;
-    /* position: relative; */
-    /* margin-top: 5%; */
-    /* left: 50%; */
+    padding: 1rem;
 }
 
 .main-container__signup_area {
