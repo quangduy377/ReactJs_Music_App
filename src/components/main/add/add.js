@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import unifyImg from "../../../images/unify.png";
 import trashImg from "../../../images/trash.png";
 import backgroundImg from '../../../images/background_2.jpg'
 import AddClasses from './add.module.css'
+import NavContext from "../../context/navigate-context";
 const Add = (props) => {
+  const navCtx = useContext(NavContext)
   return (
     <React.Fragment>
       <div>
@@ -24,7 +26,7 @@ const Add = (props) => {
       </header>
       <main>
         <div className={AddClasses["main-section"]}>
-          <form className={AddClasses["main-section__form"]} onSubmit={props.onOpenListPage}>
+          <form className={AddClasses["main-section__form"]} onSubmit={navCtx.handleOpenPage.openListPage}>
             <div className={AddClasses["main-section__form_section"]}>
               <label>Singer: </label>
               <input type="text" />

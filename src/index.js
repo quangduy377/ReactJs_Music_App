@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { NavContextProvider } from "./components/context/navigate-context";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavContextProvider>
+      <App />
+    </NavContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
